@@ -2,50 +2,36 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div style={{ backgroundColor: '#1C4D7F', width: '100%', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px' }}>
-      <img src="src\assets\CCSR_logo-removebg-preview.png" alt="Left Logo" style={{ height: '50px', width: '50px', borderRadius: '50%' }} />
-      <div style={{ display: 'flex', gap: '20px' }}>
-        <a href="#home" style={linkStyle}>Home</a>
-        <a href="#gallery" style={linkStyle}>Gallery</a>
-        <a href="#about" style={linkStyle}>About Us</a>
-        <a href="#contact" style={linkStyle}>Contact Us</a>
+    <nav className="w-full h-16 bg-[#1C4D7F] flex items-center justify-between px-8 fixed top-0">
+      {/* Left Logo */}
+      <img 
+        src="src\assets\CCSR_logo-removebg-preview.png" 
+        alt="Left Logo" 
+        className="h-16 w-auto rounded-full"
+      />
+
+      {/* Navigation Links */}
+      <div className="flex gap-8">
+        {['Home', 'Gallery', 'About us', 'Contact us'].map((item) => (
+          <a
+            key={item}
+            href={`#${item.toLowerCase().replace(' ', '-')}`}
+            className="text-white font-medium relative group font-['Instrument_Sans']"
+          >
+            {item}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          </a>
+        ))}
       </div>
-      <img src="src\assets\CCSR_Principle_-removebg-preview.png" alt="Right Logo" style={{ height: '50px', width: '50px', borderRadius: '50%' }} />
-    </div>
+
+      {/* Right Logo */}
+      <img 
+        src="src\assets\CCSR_Principle_-removebg-preview.png" 
+        alt="Right Logo" 
+        className="h-16 w-auto rounded-full"
+      />
+    </nav>
   )
 }
 
-const linkStyle = {
-  color: 'white',
-  textDecoration: 'none',
-  position: 'relative',
-  cursor: 'pointer',
-  transition: 'color 0.3s',
-};
-
-const linkHoverStyle = {
-  ...linkStyle,
-  '::after': {
-    content: '""',
-    position: 'absolute',
-    width: '100%',
-    height: '2px',
-    bottom: '0',
-    left: '0',
-    backgroundColor: 'white',
-    transform: 'scaleX(0)',
-    transformOrigin: 'bottom right',
-    transition: 'transform 0.3s ease-out',
-  },
-  ':hover::after': {
-    transform: 'scaleX(1)',
-    transformOrigin: 'bottom left',
-  },
-  ':hover': {
-    color: '#ddd',
-  },
-};
-
 export default Navbar
-
-
