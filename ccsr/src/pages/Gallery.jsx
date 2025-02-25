@@ -56,7 +56,7 @@ const Gallery = () => {
   return (
     <div>
       {/* Gallery Section */}
-      <div className="relative mb-8">
+      <div className="relative mt-8 mb-8">
         <h1 className="text-7xl font-extrabold text-center text-[#1C4D7F] font-['EB_Garamond'] pt-5 mb-0">
           Gallery
         </h1>

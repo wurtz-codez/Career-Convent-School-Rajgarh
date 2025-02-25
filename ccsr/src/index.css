@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Instrument Sans, Arial, sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
   color: #1C4D7F;
@@ -109,4 +109,25 @@ img {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+/* Add this to your CSS file */
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #F7DC07;
+  animation: expandBorder 1.5s ease-in-out forwards;
+}
+
+@keyframes expandBorder {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
