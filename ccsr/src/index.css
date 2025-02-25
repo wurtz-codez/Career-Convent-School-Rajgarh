@@ -97,3 +97,16 @@ img {
 .animate-underline {
   animation: underlinePulse 3s ease-out forwards;
 }
+
+/* Add to your CSS file or create a style tag in your component */
+.slick-slider, .slick-list, .slick-track {
+  height: 100% !important;
+}
+.slick-slide > div {
+  height: 100%;
+}
+.slick-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

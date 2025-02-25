@@ -61,9 +61,6 @@ const Home = () => {
 
   return (
     <div className="w-full">
-
-      <Navbar />
-
       {/* Home Section */}
 
       <div className="mt-16"> {/* This margin prevents content from going under navbar */}
@@ -121,15 +118,6 @@ const Home = () => {
               Discipline • Education • Ordination
             </h2>
           </div>
-        </div>
-      </div>
-
-      {/* Gallery Section */}
-      <div>
-        <div className="relative mb-8">
-          <h1 className="text-7xl font-extrabold text-center text-[#1C4D7F] font-['EB_Garamond'] pt-5 mb-0">
-            Gallery
-          </h1>
         </div>
       </div>
     </div>
