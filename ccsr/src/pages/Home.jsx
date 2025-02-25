@@ -61,7 +61,11 @@ const Home = () => {
 
   return (
     <div className="w-full">
+
       <Navbar />
+
+      {/* Home Section */}
+
       <div className="mt-16"> {/* This margin prevents content from going under navbar */}
         <div className="w-full h-[600px]">
           <Slider {...settings}>
@@ -77,50 +81,58 @@ const Home = () => {
           </Slider>
         </div>
         
-        <div>
+        <div className='bg-[#1C4D7F]'>
           <div className="relative">
-            <h1 className="text-7xl font-extrabold text-center text-white-500 font-['EB_Garamond'] pt-5 mb-0">
+            <h1 className="text-7xl font-extrabold text-center text-white font-['EB_Garamond'] pt-5 mb-0">
               Career Convent School
             </h1>
-            <div className="absolute h-1 bg-yellow-500 left-1/2 transform -translate-x-1/2 bottom-0
+            <div className="absolute h-1 bg-[#F7DC07] left-1/2 transform -translate-x-1/2 bottom-0
               animate-underline">
             </div>
           </div>
           
           <div className="relative flex justify-between items-center px-20">
             <div className="flex flex-col items-center">
-              <p className="text-4xl font-semibold text-yellow-500 font-['EB_Garamond']">
+              <p className="text-4xl font-semibold text-[#F7DC07] font-['EB_Garamond']">
                 Establish Year
               </p>
-              <p className="text-6xl font-bold text-yellow-500 font-['EB_Garamond']">
+              <p className="text-6xl font-bold text-[#F7DC07] font-['EB_Garamond']">
                 {establishCount}
               </p>
             </div>
             
-            <h3 className="text-4xl font-bold text-center text-white-500 font-['EB_Garamond']">
+            <h3 className="text-4xl font-bold text-center text-white font-['EB_Garamond']">
               Rajgarh (M.P.)
             </h3>
             
-            <div className="flex flex-col items-center">
-              <p className="text-4xl font-semibold text-yellow-500 font-['EB_Garamond']">
+            <div className="flex flex-col items-center">  
+              <p className="text-4xl font-semibold text-[#F7DC07] font-['EB_Garamond']">
                 Students
               </p>
-              <p className="text-6xl font-bold text-yellow-500 font-['EB_Garamond']">
+              <p className="text-6xl font-bold text-[#F7DC07] font-['EB_Garamond']">
                 {studentCount}+
               </p>
             </div>
           </div>
 
           <div className="flex justify-center">
-            <h2 className="text-3xl font-bold text-center border-2 border-black p-4 inline-block
-              bg-yellow-200 text-blue-900 rounded-lg transform transition-all duration-500 hover:scale-105 animate-fadeIn">
+            <h2 className="text-3xl mt-3 font-bold text-center border-2 border-black p-4 inline-block
+              bg-[#F7DC07] text-blue-900 rounded-lg transform transition-all duration-500 hover:scale-105 animate-fadeIn">
               Discipline • Education • Ordination
             </h2>
           </div>
         </div>
       </div>
+
+      {/* Gallery Section */}
+      <div>
+        <div className="relative mb-8">
+          <h1 className="text-7xl font-extrabold text-center text-[#1C4D7F] font-['EB_Garamond'] pt-5 mb-0">
+            Gallery
+          </h1>
+        </div>
+      </div>
     </div>
   )
-}
-
+};
 export default Home;

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-16 bg-[#1C4D7F] flex items-center justify-between px-8 fixed top-0 z-50">
+    <nav className="w-full h-16 bg-[#1C4D7F] flex items-center justify-between px-8 fixed top-0 z-50 border-b-4 border-[#F7DC07]">
       {/* Left Logo */}
       <img 
         src="src\assets\CCSR_logo-removebg-preview.png" 
