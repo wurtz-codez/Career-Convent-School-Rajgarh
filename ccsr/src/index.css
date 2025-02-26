@@ -131,3 +131,25 @@ img {
     width: 100%;
   }
 }
+
+/* Navigation link hover effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F7DC07;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active navigation link */
+.active-nav-link {
+  background-color: #F7DC07 !important;
+  color: #1C4D7F !important;
+}
