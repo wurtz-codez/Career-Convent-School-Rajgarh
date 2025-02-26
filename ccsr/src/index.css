@@ -132,6 +132,23 @@ img {
   }
 }
 
+@keyframes flip {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.flip-animation {
+  animation: flip 8s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+
+
 /* Navigation link hover effect */
 .nav-link::after {
   content: '';
