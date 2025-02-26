@@ -82,7 +82,7 @@ const Home = () => {
         
         <div className='bg-[#1C4D7F]'>
           <div className="relative">
-            <h1 className="text-7xl font-extrabold text-center text-white font-['EB_Garamond'] pt-5 mb-0">
+            <h1 className="text-7xl font-extrabold text-center text-white font-['EB_Garamond'] pt-3 mb-0 pb-6">
               Career Convent School
             </h1>
             <div className="absolute h-1 bg-[#F7DC07] left-1/2 transform -translate-x-1/2 bottom-0
@@ -115,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center">
-            <h2 className="text-3xl mt-3 font-bold text-center border-2 border-black p-4 inline-block
+            <h2 className="text-3xl mt-0 font-bold text-center border-2 border-black p-4 inline-block
               bg-[#F7DC07] text-blue-900 rounded-lg transform transition-all duration-500 hover:scale-105 animate-fadeIn">
               Discipline • Education • Ordination
             </h2>
