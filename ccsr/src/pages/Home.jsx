@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import betiBachaoImage from '../assets/gallery/home_carousel/carousel1.jpg';
+import facultyImage from '../assets/gallery/home_carousel/carousel2.jpg';
+import vandeMatramImage from '../assets/gallery/home_carousel/carousel3.jpg';
 
 const Home = () => {
   const [establishCount, setEstablishCount] = useState(0);
@@ -54,9 +56,9 @@ const Home = () => {
   };
 
   const images = [
-    "src/assets/carousel1.jpg",
-    "src/assets/carousel2.jpg",
-    "src/assets/carousel3.jpg"
+    betiBachaoImage,
+    facultyImage,
+    vandeMatramImage
   ];
 
   return (
