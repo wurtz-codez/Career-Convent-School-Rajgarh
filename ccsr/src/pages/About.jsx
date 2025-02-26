@@ -47,7 +47,7 @@ const About = () => {
                 <div className='mt-8 relative'>
                   <div className='border-animation'></div>
                   <h1 className="text-5xl text-[#F7DC07] font-['EB_Garamond'] mt-8 pt-5">
-                    Message from the Director
+                    Message from Director
                   </h1>
                   <p className='text-lg text-white mt-4'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, voluptates voluptatem consequatur iure minima tempora omnis perferendis quos obcaecati amet. Corporis ad facilis molestias quia error quasi iste minus repellendus.
